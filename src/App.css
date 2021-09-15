@@ -2,12 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Fira Sans", sans-serif;
 }
-
+header {
+  margin-top: 20px;
+}
 h1 {
   color: #aaa;
   text-align: center;
-  font-family: 'Fira Sans', sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
 }
@@ -16,14 +18,85 @@ strong {
 }
 
 .topBar {
-    margin: 1 rem;
-    padding: 0.5 rem;
-    display: flex;
-    justify-content: center;
+  margin: 1 rem;
+  padding: 0.5 rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 a {
-    margin: 1rem;
-    padding: 1rem;
-    text-decoration: none;
-    color: black;
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top-img {
+  height: 160px;
+  width: 105px;
+}
+
+.btn {
+  margin: 10px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 0;
+}
+
+.btn-img {
+  height: 30px;
+  width: 30px;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-forward:hover,
+.hvr-forward:focus,
+.hvr-forward:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+.hvr-backward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-backward:hover,
+.hvr-backward:focus,
+.hvr-backward:active {
+  -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
 }

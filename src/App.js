@@ -15,11 +15,10 @@ function App() {
 
     SetTopAnime(temp.top.slice(0,6))
   }
-
   useEffect(() => {
     getTopAnime();
   },[])
-  console.log(topAnime)
+  
   return (
     <div>
       <Header />
