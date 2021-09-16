@@ -15,7 +15,7 @@ function TopBar({ topAnime }) {
                 key={anime.mal_id}
                 target="_blank"
                 rel="noreferrer">
-                <img className="top-img" src={anime.image_url}/> {anime.title} 
+                <img className="top-img" src={anime.image_url} alt="cover"/> {anime.title} 
             </a>   
             ))}
             <div className="btn-container">

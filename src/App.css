@@ -1,50 +1,124 @@
 * {
   box-sizing: border-box;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Fira Sans", sans-serif;
 }
+
 header {
+  display: flex;
+  align-items: center;
   margin-top: 20px;
+  height: 100px;
 }
+
 h1 {
   color: #aaa;
   text-align: center;
   font-size: 2.5rem;
   font-weight: 400;
 }
+
 strong {
   color: black;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Trending Anime  */
+.top-container {
+  display: flex;
+  height: 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top-img:hover {
+  height: 230px;
+  width: 175px;
+}
+
+.top-img {
+  height: 195px;
+  width: 140px;
+  border-radius: 10px;
+}
+
 .topBar {
-  margin: 1 rem;
-  padding: 0.5 rem;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-a {
-  margin: 1rem;
-  padding: 1rem;
+
+/* SEARCH AND MAIN CONTENT AREA */
+.container {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.search {
+  padding: 5px;
+  width: 375px;
+  height: 100vh;
+  flex-direction: column;
+  border: 1px solid;
+}
+
+.search-box {
+  height: 20px;
+}
+
+.main-head {
+  display: flex;
+  height: 100vh;
+  width: calc(100%-375px);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.anime-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+  width: 276px;
+  margin: 5px;
+  text-align: center;
+}
+
+.cover-img {
+  border-radius: 10px;
+  height: 200px;
+  width: 155px;
+}
+
+#anime-title {
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
   text-decoration: none;
   color: black;
 }
 
-.top-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.cover-img:hover {
+  height: 230px;
+  width: 175px;
 }
-
-.top-img {
-  height: 160px;
-  width: 105px;
-}
-
+/* Buttons */
 .btn {
   margin: 10px;
   border-radius: 50%;
@@ -64,6 +138,7 @@ a {
   justify-content: center;
 }
 
+/* Button Hover CSS */
 .hvr-forward {
   display: inline-block;
   vertical-align: middle;
