@@ -10,17 +10,25 @@ function App() {
   const [animeList, SetAnimeList] =useState([])
   const [topAnime, SetTopAnime] = useState([])
   const [search, SetSearch] =useState("")
-
+  let temp
+  let index
   const getTopAnime = async () => {
-    const temp = await fetch(`https://api.jikan.moe/v3/top/anime/1/bypopularity`)
+    temp = await fetch(`https://api.jikan.moe/v3/top/anime/1/bypopularity`)
       .then(response => response.json());
-
     SetTopAnime(temp.top.slice(0,6))
+    index = 6
+  }
+  function handlePaginationRight() {
+    index += 6;
+    SetTopAnime(temp.top.slice(index, 6))
+  }
+  function handlePaginationLeft() {
+    index -= 6;
+    SetTopAnime(temp.top.slice(index, 6));
   }
 
   const HandleSearch = e => {
     e.preventDefault();
-
     FetchAnime(search)
   }
 

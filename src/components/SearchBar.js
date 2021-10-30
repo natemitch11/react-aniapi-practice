@@ -11,7 +11,7 @@ function SearchBar(props) {
                     placeholder="Search for an Anime..."
                     required
                     value = {props.search}
-                    onChange={e =>props.SetSearch(e.target.value)} />
+                    onChange={e =>props.SetSearch(e.target.value)} /> 
                 </form>    
             </div> 
         </aside> 
